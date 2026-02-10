@@ -10,6 +10,25 @@ body {
   .text-balance {
     text-wrap: balance;
   }
+  .bg-noise {
+    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E");
+    opacity: 0.05;
+  }
+  .bg-brand-green {
+    background-color: hsl(var(--brand-green));
+  }
+  .bg-brand-gold {
+    background-color: hsl(var(--brand-gold));
+  }
+  .bg-brand-cream {
+    background-color: hsl(var(--brand-cream));
+  }
+  .text-brand-green {
+    color: hsl(var(--brand-green));
+  }
+  .text-brand-gold {
+    color: hsl(var(--brand-gold));
+  }
 }
 
 @layer base {
@@ -47,6 +66,12 @@ body {
     --sidebar-accent-foreground: 240 5.9% 10%;
     --sidebar-border: 220 13% 91%;
     --sidebar-ring: 217.2 91.2% 59.8%;
+
+    /* Brand Colors */
+    --brand-green: 154 41% 16%;
+    --brand-gold: 36 73% 57%;
+    --brand-cream: 45 40% 96%;
+    --brand-brown: 20 20% 20%;
   }
   .dark {
     --background: 0 0% 3.9%;
